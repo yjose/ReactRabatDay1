@@ -1,0 +1,78 @@
+html,
+* {
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font: caption;
+}
+
+input {
+  padding: 0.5em;
+  border: 1px solid #03a9f4;
+  background-color: #03a9f469;
+}
+
+button,
+.button,
+input[type="submit"] {
+  background-color: #03a9f4;
+  border: 1px solid #03a9f4;
+  color: white;
+  padding: 0.5em;
+  transition: all 0.2s;
+}
+button:hover,
+.button:hover,
+input[type="submit"]:hover {
+  background-color: #03a9f469;
+}
+button:active,
+.button:active,
+input[type="submit"]:active {
+  background-color: #03a9f469;
+}
+button.full-width,
+.button.full-width,
+input[type="submit"].full-width {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.Application {
+  margin: auto;
+  max-width: 400px;
+}
+
+.CountDown {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border: 1px solid #f5b4c3;
+  background-color: #ffe0e7;
+}
+.Items-searchTerm {
+  background-color: white;
+  margin-bottom: 0.5em;
+  width: 100%;
+}
+.Item-remove {
+  background-color: white;
+  color: #f65e81;
+  border: none;
+  margin-left: 1em;
+  outline: none;
+  padding: 0;
+}
+
+.Item-remove:hover {
+  background-color: white;
+  text-decoration: underline;
+}
+.NewItem {
+  display: flex;
+}
+
+.NewItem-input {
+  width: 100%;
+}
