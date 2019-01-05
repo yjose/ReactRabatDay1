@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-import uniqueId from 'lodash/uniqueId';
-
-
+import React, { Component } from "react";
+import uniqueId from "lodash/uniqueId";
 
 class NewItem extends Component {
-  state = { value: '' };
+  state = { value: "" };
 
   handleChange = event => {
+    this.setState({ value: event.target.value });
     // Do something when the state of this input changes.
   };
 
@@ -15,6 +14,8 @@ class NewItem extends Component {
     const { value } = this.state;
 
     event.preventDefault();
+    onSubmit(value);
+    this.setState({ value: "" });
 
     // Do something when a new value is submitted.
 
